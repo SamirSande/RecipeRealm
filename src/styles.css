@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+ /* Global reset and typography */
+ @media (max-width: 768px) {
+  body {
+    background-color: lightblue !important; /* This ensures the media query is applied */
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

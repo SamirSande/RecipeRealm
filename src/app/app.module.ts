@@ -1,16 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { HttpClientModule } from '@angular/common/http';
+import { RecipeListComponent } from './components/recipe-list/recipe-list.component';
+import { RecipeDetailComponent } from './components/recipe-detail/recipe-detail.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RecipeListComponent,
+    RecipeDetailComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
